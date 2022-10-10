@@ -22,32 +22,27 @@ body {
       no-repeat,
     url(../images/bg-pattern-top.svg) top -500px left -200px no-repeat;
   background-color: hsl(185, 75%, 39%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+
   flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+
   align-items: center;
   text-align: center;
 }
 
 .container {
   background-color: #fff;
-  width: 34rem;
-  height: 36rem;
+  width: 32rem;
+  height: 33rem;
   border-radius: 10px;
 }
 
 .img_background {
   width: 100%;
   height: 12rem;
+
   background-size: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -56,4 +51,20 @@ body {
   border-radius: 50%;
   border: 3.5px solid #fff;
   margin-top: -4rem;
+}
+
+.name {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.age {
+  color: var(--Dark-gray);
+}
+
+.location {
+  margin-top: 0.8rem;
+
+  color: var(--Dark-gray);
 }
