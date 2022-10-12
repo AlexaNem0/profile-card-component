@@ -30,13 +30,15 @@ body {
 
   align-items: center;
   text-align: center;
+  padding: 1.5rem;
 }
 
 .container {
   background-color: #fff;
-  width: 32rem;
-  height: 33rem;
+  width: 31rem;
+  height: 31rem;
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .img_background {
@@ -51,20 +53,102 @@ body {
   border-radius: 50%;
   border: 3.5px solid #fff;
   margin-top: -4rem;
+  width: 8rem;
 }
 
-.name {
+.heading {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .age {
+  font-weight: 400;
+  margin-left: 0.5rem;
   color: var(--Dark-gray);
 }
 
 .location {
   margin-top: 0.8rem;
-
+  font-weight: 400;
   color: var(--Dark-gray);
 }
+
+hr {
+  background-color: var(--Dark-gray);
+  border: 0 none;
+  color: var(--Dark-gray);
+  height: 0.5px;
+  margin-top: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.name {
+  color: var(--Dark-gray);
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+.attribution {
+  margin-top: 1rem;
+}
+.attribution a {
+  color: var(--Very-dark-desaturated-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(../images/bg-pattern-bottom.svg) left 45vw top 42vh
+        no-repeat,
+      url(../images/bg-pattern-top.svg) right 45vw bottom 42vh no-repeat;
+  }
+  .container {
+    width: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+} */
